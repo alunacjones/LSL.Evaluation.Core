@@ -16,7 +16,7 @@
     <PackageVersion>1.0.1</PackageVersion>
     <PackageTags>scripting;evaluation;abstraction;abstractions;core</PackageTags>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
-    <PackageDescription>Description here</PackageDescription>
+    <PackageDescription>Scripted Evaluation Abstractions</PackageDescription>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/alunacjones/LSL.Evaluation.Core</RepositoryUrl>
     <Authors>alunacjones</Authors>
