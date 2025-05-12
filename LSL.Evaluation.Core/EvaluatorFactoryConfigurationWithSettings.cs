@@ -18,8 +18,5 @@ public class EvaluatorFactoryConfigurationWithSettings<TSettings> : EvaluatorFac
     public IEnumerable<Action<TSettings>> SettingsConfigurators => _settingsConfigurators;
 
     /// <inheritdoc/>
-    public void Configure(Action<TSettings> settingsConfigurator)
-    {
-        _settingsConfigurators.Add(settingsConfigurator);
-    }
+    public void Configure(Action<TSettings> settingsConfigurator) => _settingsConfigurators.Add(settingsConfigurator);
 }

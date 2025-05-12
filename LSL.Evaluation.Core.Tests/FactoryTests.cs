@@ -31,7 +31,11 @@ public class FactoryTests
             .Build(c =>
             {
                 c.AddCode("var value = 12");
-                c.SetValue("by2", (int i) => i * 2);
+                c.SetValues([
+                    new("value3", 123), 
+                    new("by2", (int i) => i * 2)
+                ]);
+                
                 c.Configure(s =>
                 {
                     s.ConfigureEngine(e => e.Execute("var value2 = 2"));
@@ -39,9 +43,9 @@ public class FactoryTests
             });
 
         // Act
-        var result = sut.Evaluate<int>("value + by2(value2)");
+        var result = sut.Evaluate<int>("value + by2(value2) + value3");
 
         // Assert
-        result.Should().Be(16);
+        result.Should().Be(139);
     }        
 }
