@@ -6,7 +6,7 @@
 
   <PropertyGroup Condition="Exists('$(SnkFile)')">
     <AssemblyOriginatorKeyFile>$(SnkFile)</AssemblyOriginatorKeyFile>
-    <SignAssembly>True</SignAssembly>      
+    <SignAssembly>True</SignAssembly>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -21,6 +21,7 @@
     <RepositoryUrl>https://github.com/alunacjones/LSL.Evaluation.Core</RepositoryUrl>
     <Authors>alunacjones</Authors>
     <LangVersion>11</LangVersion>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -28,6 +29,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\readme.md" Pack="true" PackagePath=""/>
-  </ItemGroup>   
+    <None Include="..\readme.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>  
 </Project>
